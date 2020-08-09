@@ -1,0 +1,24 @@
+import { Meta, Story, Props, Primary, Preview, Description, Title } from '@storybook/addon-docs/blocks';
+import welcome from '../test.vue';
+
+<Meta title='welcome1' component={welcome}/>
+
+<Title>标题</Title>
+
+<Description>Some **markdown** description, or whatever you want.</Description>
+
+<Primary>
+  <welcome></welcome>
+</Primary>
+
+## Props
+
+<Props of={welcome} />
+
+
+<Preview>
+<Story name='测试1' height='400px'>{{
+  components: { welcome },
+  template: '<welcome />',
+}}</Story>
+</Preview>

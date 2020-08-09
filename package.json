@@ -5,21 +5,41 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:file": "node build/bin/build-entry.js",
+    "build-lib": "vue-cli-service build --target lib",
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 6006",
+    "storybook-docs": "start-storybook --docs -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@storybook/addon-actions": "^6.0.0-rc.28",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-docs": "^6.0.0-rc.28",
+    "@storybook/addon-knobs": "^6.0.0-rc.28",
+    "@storybook/addon-links": "^6.0.0-rc.28",
+    "@storybook/addon-storysource": "^6.0.0-rc.28",
+    "@storybook/addon-toolbars": "^6.0.0-rc.28",
+    "@storybook/addon-viewport": "^6.0.0-rc.28",
+    "@storybook/vue": "^6.0.0-rc.28",
     "@vue/cli-plugin-babel": "^4.4.0",
     "@vue/cli-plugin-eslint": "^4.4.0",
     "@vue/cli-service": "^4.4.0",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "file-save": "^0.2.0",
+    "json-templater": "^1.2.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "react-is": "^16.13.1",
+    "uppercamelcase": "^3.0.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
