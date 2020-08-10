@@ -1,0 +1,26 @@
+
+import { Meta, Story, Props, Primary, Preview, Description, Title } from '@storybook/addon-docs/blocks';
+import button from '../../packages/button/src/main.vue';
+
+<Meta title='button' component={button}/>
+
+<Title>button</Title>
+
+<Description>Some **markdown** description, or whatever you want.</Description>
+
+<Primary>
+  <mo-button></mo-button>
+</Primary>
+
+## Props
+
+<Props of={button} />
+
+
+<Preview>
+<Story name='button-1' height='400px'>{{
+  components: { button },
+  template: '<mo-button />',
+}}</Story>
+</Preview>
+
