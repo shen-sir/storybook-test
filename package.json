@@ -1,15 +1,15 @@
 {
-  "name": "mx-testing-ui",
+  "name": "mx-ui",
   "version": "0.1.0",
   "description": "基于 vue-cli3 的 UI 组件库",
-  "main": "lib/mo-ui.umd.min.js",
+  "main": "lib/mx-ui.umd.min.js",
   "private": false,
   "keywords": "mx-ui",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build:file": "node build/bin/build-entry.js",
-    "build-lib": "vue-cli-service build --target lib --name mo-ui --dest lib src/index.js",
+    "build-lib": "vue-cli-service build --target lib --name mx-ui --dest lib src/index.js",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "storybook-docs": "start-storybook --docs -p 6006",

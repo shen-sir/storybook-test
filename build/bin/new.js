@@ -34,22 +34,22 @@ export default ${ComponentName};`
   {
     filename: 'src/main.vue',
     content: `<template>
-  <div class="mo-${componentname}"></div>
+  <div class="mx-${componentname}">新增${componentname}组件</div>
 </template>
 
 <script>
 export default {
-  name: 'Mo${ComponentName}'
+  name: 'Mx${ComponentName}'
 };
 </script>
 
 <style lang="less">
-.mo-${ComponentName}{}
+.mx-${componentname}{}
 </style>`
   },
   {
     filename: path.join('../../src/stories', `0-${componentname}.stories.mdx`),
-    content: storiesTemplate(componentname)
+    content: storiesTemplate(ComponentName, componentname)
   },
   // {
   //   filename: path.join('../../examples/docs/zh-CN', `${componentname}.md`),

@@ -1,26 +1,26 @@
-module.exports =  componentname => `
+module.exports =  (ComponentName, componentname) => `
 import { Meta, Story, Props, Primary, Preview, Description, Title } from '@storybook/addon-docs/blocks';
-import ${componentname} from '../../packages/${componentname}/src/main.vue';
+import Mx${ComponentName} from '../../packages/${componentname}/src/main.vue';
 
-<Meta title='${componentname}' component={${componentname}}/>
+<Meta title='${ComponentName}' component={Mx${ComponentName}}/>
 
 <Title>${componentname}</Title>
 
 <Description>Some **markdown** description, or whatever you want.</Description>
 
 <Primary>
-  <mo-${componentname}></mo-${componentname}>
+  <mx-${componentname}></mx-${componentname}>
 </Primary>
 
 ## Props
 
-<Props of={${componentname}} />
+<Props of={Mx${ComponentName}} />
 
 
 <Preview>
 <Story name='${componentname}-1' height='400px'>{{
-  components: { ${componentname} },
-  template: '<mo-${componentname} />',
+  components: { Mx${ComponentName} },
+  template: '<mx-${componentname} />',
 }}</Story>
 </Preview>
 `
